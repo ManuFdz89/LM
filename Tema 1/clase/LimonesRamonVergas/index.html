@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limones Ramón Vergas</title>
+</head>
+<body>
+
+    <header> <!--Con el header dentro del body hacemos la cabecera que se muestra en todas las paginas que hagamos-->
+
+        <h1>Limones Vergas</h1>
+
+        <nav>
+            <a href="#" target="_top">Inicio</a> <!-- target="_top" si le das te lleva a la parte superior de la pagina-->
+            <a href="#">Tienda</a>
+            <a href="#">Recetas</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <figure> <!--contenedor semantico para imagenes, graficos...., es bueno sobre todo para accesibilidad, porque todos los medios del sistema lo ven como imagen lo que esta dentro-->
+            <img src="tartalimon.jpg" width="50%" alt="Rica tarta de limones" title="Tarta de limon">
+            <figcaption>Tarta de queso con nata</figcaption> <!--texto de pie de imagen-->
+        </figure>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Nuestra receta de limon con Huevos</h2>
+            <figure>
+                <img src="huevon.jpg" alt="50%">
+                <figcaption>Limones y huevos</figcaption>
+            </figure>
+            <p>ROmpemos los huevos en los limones</p>
+        </article>
+        <aside>
+
+            <h3>Productos relacionados</h3>
+            <ul>
+                <li><a href="#">Normativa sanitaria de los limones</a></li>
+                <li><a href="#">Procedencia de nuestros limones</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <address> <!-- google interpreta que todo lo que esta aqui, sera para informacion de contacto-->
+            Contacto:
+            <a href="mailto:fe.ro.manu@gmail.com">Enviar Mail</a>            
+        </address>
+
+        <time datetime="2025-11-25T17:00"> 25 de noviembre a las 17:00</time><!--para añadir al calendario al hacerle click a la fecha-->
+
+        <p>&copy; 2025 Limones Vergas</p>
+    </footer>
+</body>
+</html>

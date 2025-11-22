@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera página</title>
+</head>
+
+<body>
+    <h1>Pepinos Manolo</h1>
+    
+    <a href="https://www.agroboca.com/comprar/pepinos" target="_blank">Visitar tienda</a>
+    
+    <p></p>
+    
+    <img src="Pepino.jpg" width="150" height="120" alt="Pepinos cortados en rodajas" title="Imagen de pepino">
+    
+    <h2>Pepinos Manolo</h2>
+    
+    <ul>
+        <li><a href="https://www.agroboca.com/comprar/pepinos" target="_blank">Pepino moreno</a></li>
+        <li>Pepino rubio</li>
+        <li>Pepino albino</li>
+    </ul>
+    
+    <p> Los Mejores pepinos del mundo</p>
+    <p> Pruébalos ya!</p>
+    
+    <section id="pedidos">
+        <hr>
+        <h2>Mis Pedidos</h2>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nº pedido</th>
+                    <th>Fecha</th>
+                    <th>Importe</th>
+                    <th colspan="4">Ver Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#012</td>
+                    <td>14/01/2025</td>
+                    <td>225 €</td>
+                    <td><a href="https://www.agroboca.com/comprar/pepinos" target="_blank">Visitar tienda</a></td>
+                </tr>
+                <tr>
+                    <td>#013</td>
+                    <td>14/01/2025</td>
+                    <td>225 €</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td><a href="https://www.agroboca.com/comprar/pepinos" target="_blank">Visitar tienda</a></td>
+                </tr>
+                <tr>
+                    <td>#014</td>
+                    <td>14/01/2025</td>
+                    <td>225 €</td>
+                    <td><a href="https://www.agroboca.com/comprar/pepinos" target="_blank">Visitar tienda</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <section id="Contacto">
+        <form>
+
+            <fieldset> <legend>Datos básicos</legend>
+
+                <label>Nombre:
+                    <input id="nombre" name="nombre" type="text" placeholder="Escribe aquí tu nombre" required>
+                </label>
+                <p></p>
+                <label>Edad:</label>
+                <input type="number" min="10" max="20" step="1.5" placeholder="Escribe aquí tu Edad">
+                <p></p>
+                <label>Fecha de nacimiento:</label>
+                <input type="date">
+                <p></p>
+                <label>Email</label>
+                <input type="email" placeholder="Escribe tu correo">
+                <p></p>
+                <label>Teléfono:
+                    <input type="tel" placeholder="Escribe tu teléfono">
+                </label>
+                <p></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha, Hora y números</legend>
+                <label>Hora Preferida:
+                    <input type="time">
+                </label>
+                <p></p>
+                <label>Cita fecha y hora:
+                    <input type="datetime-local">
+                </label>
+                <p></p>
+                <label>Prioridad (0 - 100):
+                    <input id="valorRango" type="range" min="0" max="1000" value="500"
+                        oninput="document.getElementById('nRange').value=this.value">
+                    <output id="nRange">500</output>
+                </label>
+                <p></p>
+                <label>Elige un color:
+                    <input type="color">
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Selectores</legend>
+
+                <fieldset>
+                    <legend>Tipo de pepino</legend>
+                    <input type="radio" name="tipoPepino" value="moreno" checked>
+                    <label>Moreno</label>
+                    <input type="radio" name="tipoPepino" value="rubio">
+                    <label>Rubio</label>
+                    <input type="radio" name="tipoPepino" value="albino">
+                    <label>albino</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <input type="checkbox" name="extras" value="pinha">
+                    <label>Piña</label>
+                    <input type="checkbox" name="extras" value="nocilla">
+                    <label>Nocilla</label>
+                    <input type="checkbox" name="extras" value="costilleta">
+                    <label>Costilleta</label>
+                </fieldset>
+                <p></p>
+
+                <label>Variedad de pepino</label>
+                <select name="variedad" size="1">
+                    <optgroup label="clasicos">
+                        <option value="holandes">Holandés</option>
+                        <option value="espanol">Español</option>
+                    </optgroup>
+                    <optgroup label="modernos">
+                        <option value="sinSemillas">Sin Semillas</option>
+                    </optgroup>
+                </select>
+                <p></p>
+                <label>Lote (elige varios)</label>
+                <select name="lotes[]" multiple size="4">
+                    <option value="lote_a">Lote A</option>
+                    <option value="lote_b">Lote b</option>
+                    <option value="lote_c">Lote c</option>
+                    <option value="lote_d">Lote d</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Texto y archivos</legend>
+                <label>Observaciones</label>
+                <textarea id="textarea1" rows="4" cols="40"></textarea>
+                <p></p>
+                <label>Adjuntar facturas</label>
+                <input type="file" accept=".pdf, .jpg" multiple>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Progreso</legend>
+                <label>Progreso carga</label>
+                <progress value="70" max="100"></progress>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            
+        </form>
+    </section>
+</body>
+</html>
