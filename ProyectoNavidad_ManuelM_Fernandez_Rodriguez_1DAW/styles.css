@@ -1,0 +1,446 @@
+/* =========================================
+   1. VARIABLES Y CONFIGURACIÓN GENERAL
+   ========================================= */
+:root {
+    --color-principal: #962a34;
+    --color-secundario: #cfa853;
+    --color-oscuro: #1d2a3d;
+    --color-texto: #333333;
+    --color-fondo: #b8b2b277;
+    --margen-seccion: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    padding-top: 130px;
+}
+
+/* =========================================
+   2. CABECERA Y NAVEGACIÓN
+   ========================================= */
+header {
+    background-color: var(--color-oscuro);
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: 5px solid var(--color-secundario);
+    z-index: 10;
+}
+
+.header-contenido {
+    float: right;
+    width: 40%;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+header .logo img {
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
+    max-width: 80px;
+}
+
+h1 {
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+.eslogan {
+    font-style: italic;
+    color: #dad6d6;
+}
+
+nav {
+    float: left;
+    width: 60%;
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+}
+
+/* =========================================
+   3. SECCIÓN: COLECCIÓN DE PRODUCTOS
+   ========================================= */
+.coleccion-titulo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.coleccion-titulo h2 {
+    color: var(--color-principal);
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    display: inline-block;
+    border-bottom: 3px solid var(--color-secundario);
+    padding-bottom: 10px;
+}
+
+.producto {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.producto:hover {
+    border-color: var(--color-secundario);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px var(--color-secundario);
+    cursor: pointer;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+}
+
+.producto h3 {
+    font-family: 'Georgia', serif;
+    color: var(--color-oscuro);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.precio {
+    display: block;
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 3px;
+}
+
+/* ===============================
+   4. SECCIÓN: BANNER DESTACADO 
+   =============================== */
+.destacada {
+    clear: both;
+    display: block;
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 60px auto;
+    width: 90%;
+    border: 2px solid var(--color-secundario);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px var(--color-oscuro);
+}
+
+.destacada h2 {
+    color: var(--color-secundario);
+    font-family: 'Georgia', serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.destacada p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.destacada strong {
+    color: var(--color-secundario);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   5. SECCIÓN: FORMULARIO DE CONTACTO
+   ========================================= */
+.contacto {
+    clear: both;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contacto h2 {
+    text-align: center;
+    color: var(--color-oscuro);
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--color-oscuro);
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+form input,
+textarea,
+select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.campo {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+form input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid var(--color-secundario);
+    background-color: #fffdfae0;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-oscuro);
+    color: var(--color-secundario);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   6. SECCIÓN: SOBRE NOSOTROS
+   ========================================= */
+.descripcion {
+    clear: both;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    color: var(--color-principal);
+    margin-top: 60px;
+    border-top: 4px solid var(--color-secundario);
+}
+
+.descripcion h2 {
+    color: var(--color-secundario);
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    padding-top: 28px;
+}
+
+.descripcion p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.descripcion .img-flotante {
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--color-secundario);
+    object-fit: cover;
+}
+
+/* =========================================
+   7. FOOTER (PIE DE PÁGINA)
+   ========================================= */
+footer {
+    clear: both;
+    background-color: var(--color-oscuro);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 0;
+    border-top: 5px solid var(--color-secundario);
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    color: #e0e0e0;
+}
+
+footer address strong {
+    font-family: 'Georgia', serif;
+    font-size: 1.4em;
+    color: var(--color-secundario);
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+footer>p {
+    font-size: 0.8em;
+    color: #888;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* =========================================
+   8. UTILIDADES
+   ========================================= */
+.limpiar {
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+/* =========================================
+   9. RESPONSIVE DESIGN (PARA MÓVILES)
+   ========================================= */
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 400px;
+    }
+
+    header {
+        position: absolute;
+        text-align: center;
+    }
+
+    .header-contenido {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .logo img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .producto {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+
+    .descripcion .img-flotante {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 150px;
+    }
+
+    .descripcion {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}

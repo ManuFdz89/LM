@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallumbos Ciruelo</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <div class="header-contenido">
+            <figure class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </figure>
+            <h1>Gallumbos Ciruelo</h1>
+            <p class="eslogan">Tu tesoro merece un trono, no una jaula.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Productos</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="coleccion">
+            <div class="coleccion-titulo">
+                <h2>Nuestra colección</h2>
+            </div>
+
+            <article class="producto">
+                <figure>
+                    <img src="img/gallumbo1.png" alt="Gallumbo Rojo">
+                </figure>
+                <h3>El "Seductor"</h3>
+                <p>Para cuando la cosa se pone caliente, tú te mantienes fresco.</p>
+                <p class="precio"><strong>15,99€</strong></p>
+            </article>
+
+            <article class="producto">
+                <figure>
+                    <img src="img/gallumbo2.png" alt="Gallumbo Azul">
+                </figure>
+                <h3>El "Rompehielos"</h3>
+                <p>Fresquito como una brisa marina en tus partes nobles.</p>
+                <p class="precio"><strong>15,99€</strong></p>
+            </article>
+
+            <article class="producto">
+                <figure>
+                    <img src="img/gallumbo3.png" alt="Gallumbo Negro">
+                </figure>
+                <h3>El "Jefe Final"</h3>
+                <p>Elegancia pura para citas importantes (o para estar tirado en el sofá).</p>
+                <p class="precio"><strong>18,99€</strong></p>
+            </article>
+
+            <div class="limpiar"></div>
+        </section>
+
+        <section class="destacada">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>
+                Porque la vida es muy corta para llevar ropa interior aburrida.<strong>Algodón Antirozaduras</strong>.
+            </p>
+            <p>
+                Se acabaron los "pellizcos" traicioneros.
+            </p>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacta con nosotros</h2>
+            <p>
+                ¿Se han perdido tus gallumbos por el camino? ¿No sabes si la talla L aguantará tu potencial?
+                Escríbenos, no mordemos.
+            </p>
+
+            <form action="#" method="post" class="form">
+                <label class="campo">
+                    <span>Nombre:</span>
+                    <input type="text" name="nombre" placeholder="¿Cómo te llaman tus amigos?" required>
+                </label>
+
+                <label class="campo">
+                    <span>Email:</span>
+                    <input type="email" name="email" placeholder="Para enviarte la respuesta (sin spam, prometido)"
+                        required>
+                </label>
+
+                <label class="campo">
+                    <span>Tipo de consulta:</span>
+                    <select name="tipo_consulta" required>
+                        <option value="" disabled selected>¿De qué va la cosa?</option>
+                        <option value="pedido">¿Dónde están mis gallumbos?</option>
+                        <option value="tallas">Duda existencial sobre tallas</option>
+                        <option value="devoluciones">No me convencen (Imposible)</option>
+                        <option value="info">Solo pasaba a saludar</option>
+                    </select>
+                </label>
+
+                <label class="campo">
+                    <span>Mensaje:</span>
+                    <textarea name="mensaje" rows="5" placeholder="Desahógate aquí..." required></textarea>
+                </label>
+
+                <div class="acciones">
+                    <button type="submit" class="btn btn-enviar">Lanzar Mensaje</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="sobre-nosotros" class="descripcion">
+            <img src="img/destacada.png" alt="Taller Gallumbos Ciruelo" class="img-flotante">
+
+            <h2>La Filosofía Ciruelo</h2>
+            <p>
+                Nacimos un día caluroso de agosto, cansados de las costuras que pican y las gomas que dejan marca.
+                En <strong>Gallumbos Ciruelo</strong> creemos que un hombre feliz empieza por abajo.
+                Diseñados en Huelva, envidiados en el mundo entero.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            <p><strong>Gallumbos Ciruelo S.L.</strong></p>
+            <p>Calle Nueva 69
+                Huelva, España ||
+                Teléfono: <a href="tel:+34959123456">959 12 34 56</a> ||
+                Email: <a href="mailto:info@gallumbosciruelo.com">info@gallumbosciruelo.com</a>
+            </p>
+        </address>
+
+        <p>
+            &copy; 2026 Gallumbos Ciruelo. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
