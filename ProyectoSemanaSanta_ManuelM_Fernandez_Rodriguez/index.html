@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Delmiro</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+
+            <h1>
+                <img src="img/logo.png" alt="Icono Viajes Delmiro" class="header-icon">
+                Viajes Delmiro
+            </h1>
+            <p class="eslogan">Donde los padres descansan y los niños rompen la hucha.</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#info">¿Cómo funciona?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <h2>¡Las reglas han cambiado!</h2>
+                <p>
+                    En Viajes Delmiro premiamos la paciencia infinita de los adultos.
+                    Por fin unas vacaciones donde <strong>tú viajas completamente GRATIS</strong>.
+                    ¿El truco? La factura la pagan tus hijos. ¡Que vayan ahorrando la paga!
+                </p>
+
+                <div class="oferta-destacada">
+                    🔥 <strong>OFERTA FLASH:</strong> Si tu hijo tiene ahorros en el cerdito, le hacemos un 5% de
+                    descuento en su billete. ¡Tú sigues yendo gratis!
+                </div>
+
+                <div class="botones-hero">
+                    <a href="#destinos" class="btn btn-primario">Ver destinos</a>
+                    <a href="#contacto" class="btn btn-secundario">Reservar ya</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinos" class="seccion-destinos">
+            <h2>Nuestros Destinos Top</h2>
+
+            <div class="grid-tarjetas">
+                <article class="tarjeta">
+                    <h3>Disneyland París</h3>
+                    <p>El paraíso de la diversión. Que pague el ratón o que pague el niño, pero tú no sacas la cartera.
+                    </p>
+                    <div class="precios">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 1.500€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-tarjeta">Lo quiero</a>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Riviera Maya</h3>
+                    <p>Pulserita de todo incluido para ti en la piscina mientras ellos pagan los cócteles (sin alcohol).
+                    </p>
+                    <div class="precios">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 2.200€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-tarjeta">Lo quiero</a>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Safari en Kenia</h3>
+                    <p>Aventura salvaje garantizada. El niño paga el jeep, tú disfrutas de las vistas de los leones.</p>
+                    <div class="precios">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 3.100€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-tarjeta">Lo quiero</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="info" class="seccion-info">
+            <h2>¿Cómo funciona nuestra promoción?</h2>
+            <p>Es muy sencillo, sigue estos 3 pasos para disfrutar de tus merecidas vacaciones:</p>
+            <ol class="lista-pasos">
+                <li><strong>Demuestra que eres el adulto:</strong> Trae tu DNI y tu cara de cansancio acumulado.</li>
+                <li><strong>Presenta a la víctima:</strong> Trae a tu hijo, sobrino o nieto junto con su hucha, cartilla
+                    de ahorros o el dinero de la comunión.</li>
+                <li><strong>¡A volar!:</strong> Nosotros le cobramos a él la tarifa completa y te emitimos a ti un
+                    billete VIP a coste cero.</li>
+            </ol>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h2>Reserva tu viaje</h2>
+            <p>Rellena el formulario y prepárate para no gastar ni un euro.</p>
+
+            <form action="#" class="formulario">
+                <div class="grupo-form">
+                    <label for="nombre">Nombre del adulto (el que no paga):</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="mensaje">¿A dónde queréis ir y cuánto tiene ahorrado el niño?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-enviar">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viajes Delmiro.</p>
+        <p>Síguenos en redes: @ViajesDelmiro | Tel: 959 45 93 78</p>
+    </footer>
+
+</body>
+
+</html>

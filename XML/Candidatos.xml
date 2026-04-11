@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candidatos>
+
+    <candidato>
+
+        <nombre>Ana Dominguesss</nombre>
+        <email>ana@correo.es</email>
+        <telefono>+34666286791</telefono>
+        <experiencia>20</experiencia>
+
+    </candidato>
+
+    <candidato>
+
+        <nombre>Rigoberto Berto</nombre>
+        <email>ana@correo.es</email>
+        <telefono>+34666286791</telefono>
+        <experiencia>20</experiencia>
+
+    </candidato>
+
+</candidatos>

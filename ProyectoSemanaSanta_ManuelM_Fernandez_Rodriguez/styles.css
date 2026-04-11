@@ -1,0 +1,358 @@
+/* ======================================================
+   VARIABLES Y RESET
+====================================================== */
+:root {
+    --color-primario: #005f73;
+    --color-secundario: #ee9b00;
+    --color-fondo: #f8f9fa;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ======================================================
+   1. CABECERA Y NAVEGACIÓN (Cabecera Blanca)
+====================================================== */
+header {
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    padding: 1rem 2rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-icon {
+    height: 1.5em; 
+    width: auto;
+}
+
+.eslogan {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666666;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--color-secundario);
+}
+
+/* ======================================================
+   2. SECCIÓN PRINCIPAL (HERO CON IMAGEN)
+====================================================== */
+.hero {
+    background-image: linear-gradient(rgba(0, 95, 115, 0.7), rgba(0, 95, 115, 0.8)), url('img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    
+    color: var(--color-blanco);
+    padding: 6rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--color-secundario);
+}
+
+.hero-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.oferta-destacada {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #ffeeba;
+    margin-bottom: 2rem;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.botones-hero {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ======================================================
+   BOTONES GLOBALES
+====================================================== */
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-primario {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.btn-primario:hover {
+    background-color: #d68b00;
+}
+
+.btn-secundario {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    border-color: var(--color-blanco);
+}
+
+.btn-secundario:hover {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border-color: var(--color-blanco);
+}
+
+.btn-enviar {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.btn-tarjeta {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* ======================================================
+   3. SECCIÓN DE DESTINOS
+====================================================== */
+.seccion-destinos {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-destinos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+}
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.precios {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.precio-adulto { color: #2a9d8f; }
+.precio-nino { color: #e76f51; }
+
+/* ======================================================
+   4. SECCIÓN INFORMATIVA
+====================================================== */
+.seccion-info {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.seccion-info h2 {
+    margin-bottom: 1rem;
+    color: var(--color-secundario);
+}
+
+.lista-pasos {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.lista-pasos li {
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* ======================================================
+   5. SECCIÓN DE CONTACTO
+====================================================== */
+.seccion-contacto {
+    padding: 4rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.seccion-contacto p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.grupo-form {
+    margin-bottom: 20px;
+}
+
+.grupo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupo-form input,
+.grupo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.grupo-form input:focus,
+.grupo-form textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 5px rgba(238, 155, 0, 0.3);
+}
+
+/* ======================================================
+   6. PIE DE PÁGINA
+====================================================== */
+footer {
+    background-color: #212529;
+    color: #ced4da;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* ======================================================
+   7. ADAPTACIÓN RESPONSIVE BÁSICA (Media Queries)
+====================================================== */
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botones-hero {
+        flex-direction: column;
+    }
+
+    .grid-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
